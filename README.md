@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="./contrib-heatmap.svg" width="860" alt="Contribution heatmap" />
+<img src="./avi-ascii.svg" width="200" alt="ASCII portrait" />
 
 </div>
 
-# 👋 Hi, I'm Bhavneet!
+# 👋 Hey, I'm Bhavneet!
 
 🧪 **Eval-first agentic AI engineer.** I build the harness around the agent, not just the agent<br/>
 📊 Retrieval and agent quality are regression-tested with measured confidence intervals, not asserted<br/>
@@ -74,5 +74,3 @@ Chatbot, tool-augmented chatbot, and news aggregator with LangSmith tracing and 
 [Portfolio](https://bhavs-portals.lovable.app) &nbsp;·&nbsp;
 [LinkedIn](https://linkedin.com/in/bhavneet-bhoria) &nbsp;·&nbsp;
 [Email](mailto:bhavrajput97@gmail.com)
-
-<!-- Heatmap refreshes daily via .github/workflows/update-profile-art.yml -->
