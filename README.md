@@ -51,11 +51,11 @@
 
 # 🚀 Featured Projects
 
-### 🔍 DocRAG &nbsp;·&nbsp; eval-first agentic RAG
+### 🔍 DocRAG &nbsp;·&nbsp; eval-first agentic RAG [repo](https://github.com/BhavneetBhoria29/DocRAG)
 
 Hybrid BM25 + ChromaDB retrieval with cross-encoder reranking, scored on the live LangGraph pipeline. Reranking lifted context precision `0.49 → 0.78 [0.63, 0.90]`, with the recall/faithfulness tradeoff measured (recall `0.85`), not hidden.
 
-### 🛡️ DocRAG red-team harness
+### 🛡️ DocRAG red-team harness [repo](https://github.com/BhavneetBhoria29/DocRAG)
 
 Indirect prompt injection across 5 payload families, poison-in-context verified per case. Command-style and keyword-guardrail families held `0% ASR / 0% FPR`. Isolated authority-framed content poisoning as the class requiring a semantic detector.
 
@@ -63,7 +63,7 @@ Indirect prompt injection across 5 payload families, poison-in-context verified 
 
 Four parallel LangGraph agents on AWS EKS (FastAPI, Celery/Redis, PostgreSQL) with Langfuse/Prometheus/Grafana observability and token-cost tracking at `sub-200ms p95`. Terraform-provisioned. Every LLM and tool call traceable.
 
-### 🤖 Multi-agent LangGraph pipeline
+### 🤖 Multi-agent LangGraph pipeline [repo](https://github.com/BhavneetBhoria29/production-rag-llmops-pipeline)
 
 Chatbot, tool-augmented chatbot, and news aggregator with LangSmith tracing and a RAGAS evaluation loop. Faithfulness `1.00`, answer relevancy `0.932`, regression-tested against a golden set.
 
