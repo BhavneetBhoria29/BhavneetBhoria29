@@ -4,7 +4,7 @@
 
 </div>
 
-# 👋 Hi, I'm Bhav!
+# 👋 Hi, I'm Bhavneet!
 
 🧪 **Eval-first agentic AI engineer.** I build the harness around the agent, not just the agent<br/>
 📊 Retrieval and agent quality are regression-tested with measured confidence intervals, not asserted<br/>
