@@ -42,13 +42,6 @@
 ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
 
-# 📊 GitHub Stats
-
-<div align="center">
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=BhavneetBhoria29&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true" alt="stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BhavneetBhoria29&theme=tokyonight&hide_border=false&layout=compact&langs_count=8" alt="top languages" />
-</div>
-
 # 🚀 Featured Projects
 
 ### 🔍 DocRAG &nbsp;·&nbsp; eval-first agentic RAG [repo](https://github.com/BhavneetBhoria29/DocRAG)
