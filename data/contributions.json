@@ -2,41 +2,6 @@
   "username": "BhavneetBhoria29",
   "days": [
     {
-      "date": "2025-08-24",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-08-25",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-08-26",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-08-27",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-08-28",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-08-29",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-08-30",
-      "count": 0,
-      "level": 0
-    },
-    {
       "date": "2025-08-31",
       "count": 0,
       "level": 0
@@ -1853,14 +1818,19 @@
     },
     {
       "date": "2026-08-29",
-      "count": 2,
-      "level": 1
+      "count": 9,
+      "level": 4
+    },
+    {
+      "date": "2026-08-30",
+      "count": 6,
+      "level": 3
     }
   ],
   "stats": {
-    "total_last_year": 134,
-    "current_streak": 15,
-    "longest_streak": 15,
+    "total_last_year": 147,
+    "current_streak": 16,
+    "longest_streak": 16,
     "best_day": {
       "date": "2026-05-16",
       "count": 21
@@ -1878,8 +1848,8 @@
       "2026-05": 89,
       "2026-06": 0,
       "2026-07": 0,
-      "2026-08": 33
+      "2026-08": 46
     },
-    "generated_at": "2026-08-29T22:19:53.900823+00:00"
+    "generated_at": "2026-08-30T11:55:20.344564+00:00"
   }
 }
