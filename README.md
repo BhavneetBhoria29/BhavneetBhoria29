@@ -9,23 +9,27 @@
 🧪 **Eval-first agentic AI engineer.** I build the harness around the agent, not just the agent<br/>
 📊 Retrieval and agent quality are regression-tested with measured confidence intervals, not asserted<br/>
 🎓 MSc Artificial Intelligence @ BTU Cottbus, Germany<br/>
-🔭 Working on production RAG, multi-agent LangGraph orchestration, RAGAS eval harnesses, and prompt-injection red-teaming<br/>
+🔭 Working on production RAG, multi-agent LangGraph orchestration, MCP servers, RAGAS eval harnesses, and prompt-injection red-teaming<br/>
+☁️ Shipping on AWS (EKS) and GCP (GKE Autopilot), both Terraform-provisioned<br/>
 🌐 [Portfolio](https://bhavs-portals.lovable.app) &nbsp;·&nbsp; [LinkedIn](https://linkedin.com/in/bhavneet-bhoria)<br/>
 
 # 🛠️ Tech Stack
 
 **Agentic AI & LLMOps**<br/>
 ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![Google ADK](https://img.shields.io/badge/Google%20ADK-4285F4?style=for-the-badge&logo=google&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
 ![LlamaIndex](https://img.shields.io/badge/LlamaIndex-000000?style=for-the-badge)
+![MCP](https://img.shields.io/badge/MCP-000000?style=for-the-badge)
 ![RAGAS](https://img.shields.io/badge/RAGAS-6E4AFF?style=for-the-badge)
 ![LiteLLM](https://img.shields.io/badge/LiteLLM-00BFA5?style=for-the-badge)
-![MCP](https://img.shields.io/badge/MCP-000000?style=for-the-badge)
-![Langfuse](https://img.shields.io/badge/Langfuse-181818?style=for-the-badge)<br/>
+![Langfuse](https://img.shields.io/badge/Langfuse-181818?style=for-the-badge)
+![LangSmith](https://img.shields.io/badge/LangSmith-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)<br/>
 
 **LLMs & APIs**<br/>
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
 ![Anthropic](https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
+![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)
 ![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)<br/>
 
@@ -36,6 +40,7 @@
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
+![GCP](https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
@@ -50,11 +55,19 @@ Hybrid BM25 + ChromaDB retrieval with cross-encoder reranking, scored on the liv
 
 ### 🛡️ DocRAG red-team harness [repo](https://github.com/BhavneetBhoria29/DocRAG)
 
-Indirect prompt injection across 5 payload families, poison-in-context verified per case. Command-style and keyword-guardrail families held `0% ASR / 0% FPR`. Isolated authority-framed content poisoning as the class requiring a semantic detector.
+Indirect prompt injection across 5 payload families (8 payloads), poison-in-context verified per case, bootstrap 95% CIs. Command-style injection held at `0% ASR` and the keyword guardrail at `0% FPR`, but authority-framed content poisoning still gets through. That's the open gap, and it's the class that needs a semantic detector.
 
 ### ⚙️ GitHub PR Review Agent &nbsp;·&nbsp; [repo](https://github.com/BhavneetBhoria29/github-pr-review-agent)
 
 Four parallel LangGraph agents on AWS EKS (FastAPI, Celery/Redis, PostgreSQL) with Langfuse/Prometheus/Grafana observability and token-cost tracking at `sub-200ms p95`. Terraform-provisioned. Every LLM and tool call traceable.
+
+### 🐞 Bug Triage MCP Server &nbsp;·&nbsp; [repo](https://github.com/BhavneetBhoria29/bugtriage-mcp)
+
+MCP server that exposes ML-backed triage, duplicate search, clustering and log search as tools for AI assistants (runs in Claude Desktop). An error-code/firmware ranker lifted duplicate recall@5 `0.17 → 0.28` over a hybrid BM25/TF-IDF baseline, and a confidence gate routes `16%` of tickets to human review. Grouped-split eval with bootstrap CIs, on synthetic data.
+
+### 🏠 Smart Home Agent &nbsp;·&nbsp; [repo](https://github.com/BhavneetBhoria29/smart-home-agent)
+
+Bilingual EN/DE shopping agent on Google ADK + Gemini over a `943`-product catalogue. The LLM decides intent, typed Python tools decide the facts: compatibility, comparison and upsell are computed in code, with structured filters before BM25 ranking. A deterministic pre-model guardrail blocks wiring and installation requests in both languages, and the eval harness tracks upsell attach rate. Deployed on GKE Autopilot (Terraform, Cloud Build), Gemini via Vertex AI with Workload Identity, so no API keys live in the cluster.
 
 ### 🤖 Multi-agent LangGraph pipeline [repo](https://github.com/BhavneetBhoria29/production-rag-llmops-pipeline)
 
